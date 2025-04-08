@@ -1,8 +1,7 @@
-#define BLYNK_TEMPLATE_ID "TMPL31wbL7NtG"
-#define BLYNK_TEMPLATE_NAME "MPMC Project"
-// #define BLYNK_AUTH_TOKEN "Rnr4nCkFdarkEAMh6LnejS0TXUvqHC0D"
+#define BLYNK_TEMPLATE_ID ""                //Enter Blynk Template ID
+#define BLYNK_TEMPLATE_NAME ""             //Enter Blynk Template Name
 
-#include <Wire.h>
+#include <Wire.h>                         //include following libraries
 #include "MAX30100_PulseOximeter.h"
 #define BLYNK_PRINT Serial
 #include <Blynk.h>
@@ -16,11 +15,11 @@
 #define REPORTING_PERIOD_MS 1000
 OakOLED oled;
 
-#define AD8232_PIN A0
+#define AD8232_PIN A0              //define pin for ecg sensor
  
-char auth[] = "Rnr4nCkFdarkEAMh6LnejS0TXUvqHC0D";             // You should get Auth Token in the Blynk App.
-char ssid[] = "E";                                     // Your WiFi credentials.
-char pass[] = "11235813";
+char auth[] = "";             // You should get Auth Token in the Blynk App.
+char ssid[] = "";                                     // Your WiFi credentials.
+char pass[] = "";
 
 PulseOximeter pox;
  
